@@ -1,4 +1,4 @@
-package epam.com.JavaCollections.Vegetables;
+package epam.com.JavaCollections.MainTask.Salad.Vegetables;
 
 import java.awt.*;
 

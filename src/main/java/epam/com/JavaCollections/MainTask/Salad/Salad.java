@@ -1,7 +1,7 @@
-package epam.com.JavaCollections.Salad;
+package epam.com.JavaCollections.MainTask.Salad;
 
-import epam.com.JavaCollections.Vegetables.*;
-import epam.com.JavaCollections.Vegetables.Vegetable;
+import epam.com.JavaCollections.MainTask.Salad.Vegetables.*;
+import epam.com.JavaCollections.MainTask.Salad.Vegetables.Vegetable;
 
 import java.awt.*;
 import java.util.ArrayList;

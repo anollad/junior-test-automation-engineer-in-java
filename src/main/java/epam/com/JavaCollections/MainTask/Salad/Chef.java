@@ -1,7 +1,5 @@
-package epam.com.JavaCollections.Salad;
-import epam.com.JavaCollections.Vegetables.*;
-import epam.com.JavaCollections.Vegetables.Vegetable;
-import org.w3c.dom.ls.LSOutput;
+package epam.com.JavaCollections.MainTask.Salad;
+import epam.com.JavaCollections.MainTask.Salad.Vegetables.Vegetable;
 
 import java.util.ArrayList;
 import java.util.Comparator;
