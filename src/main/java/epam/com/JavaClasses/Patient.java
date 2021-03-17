@@ -2,11 +2,12 @@ package epam.com.JavaClasses;
 
 public class Patient {
     private int id;
-    String nameAndPatronymic;
-    String surname;
+    private String name;
+    private String patronymic;
+    private String surname;
     private String address;
     private int telephone;
-    int medicalCardNumber;
+    private int medicalCardNumber;
     Diagnosis diagnosis;
 
     public int getId() {
@@ -17,12 +18,20 @@ public class Patient {
         this.id = id;
     }
 
-    public String getNameAndPatronymic() {
-        return nameAndPatronymic;
+    public String getName() {
+        return name;
     }
 
-    public void setNameAndPatronymic(String nameAndPatronymic) {
-        this.nameAndPatronymic = nameAndPatronymic;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPatronymic() {
+        return patronymic;
+    }
+
+    public void setPatronymic(String patronymic) {
+        this.patronymic = patronymic;
     }
 
     public String getSurname() {
@@ -65,23 +74,27 @@ public class Patient {
         this.diagnosis = diagnosis;
     }
 
-    public Patient(int id, String nameAndPatronymic, String surname) {
-        this.id = id;
-        this.nameAndPatronymic = nameAndPatronymic;
-        this.surname = surname;
-    }
-
-    public Patient(String nameAndPatronymic, String surname, int medicalCardNumber, Diagnosis diagnosis) {
-        this.nameAndPatronymic = nameAndPatronymic;
+    public Patient(String name, String patronymic, String surname, int medicalCardNumber, Diagnosis diagnosis) {
+        this.name = name;
+        this.patronymic = patronymic;
         this.surname = surname;
         this.medicalCardNumber = medicalCardNumber;
         this.diagnosis = diagnosis;
     }
+    public Patient(int id, String name, String patronymic, String surname) {
+        this.id = id;
+        this.name = name;
+        this.patronymic = patronymic;
+        this.surname = surname;
+    }
+
+
 
     @Override
     public String toString() {
         return "Patient{" +
-                "nameAndPatronymic='" + nameAndPatronymic + '\'' +
+                "name='" + name + '\'' +
+                ", patronymic='" + patronymic + '\'' +
                 ", surname='" + surname + '\'' +
                 ", medicalCardNumber=" + medicalCardNumber +
                 ", diagnosis=" + diagnosis +
