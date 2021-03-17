@@ -1,9 +1,13 @@
 package epam.com.JavaCollections.MainTask.Salad.Vegetables;
 
+import java.awt.*;
+
 public class Vegetable {
     private int weight;
     private String name;
     private int colorieContent;
+    private int price;
+    private Color color;
 
     public int getColorieContent() {
         return colorieContent;
@@ -29,10 +33,28 @@ public class Vegetable {
         this.weight = weight;
     }
 
-    public Vegetable(int weight, String name, int colorieContent) {
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public Vegetable(int weight, String name, int colorieContent, int price, Color color) {
         this.weight = weight;
         this.name = name;
         this.colorieContent = colorieContent;
+        this.price = price;
+        this.color = color;
     }
 
     @Override
