@@ -7,8 +7,11 @@ import java.io.InputStreamReader;
 public class Months {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
         System.out.println("Please, enter number from 1 to 12: ");
+
         int a = Integer.parseInt(reader.readLine());
+
         switch (a){
             case 1:
                 System.out.println("January");
