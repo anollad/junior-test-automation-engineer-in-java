@@ -17,6 +17,10 @@ public class Lines {
         List<String> strings = Files.readAllLines(path, StandardCharsets.UTF_8);
         ArrayList<String> lines = (ArrayList<String>) strings;
         lines.sort(Comparator.comparingInt(String::length));
-        System.out.println(lines);
+
+        for (String line : lines) {
+            System.out.println(line);
+        }
+        System.out.println("Strings are sorted by length.");
     }
 }
