@@ -15,8 +15,11 @@ public class Poem {
         Path path = FileSystems.getDefault().getPath(dirName, fileName);
         List<String> strings = Files.readAllLines(path, StandardCharsets.UTF_8);
         strings.sort(Comparator.comparingInt(String::length));
+
         for (String lines : strings) {
             System.out.println(lines);
         }
+        System.out.println();
+        System.out.println("Strings of poem are sorted by length.");
     }
 }

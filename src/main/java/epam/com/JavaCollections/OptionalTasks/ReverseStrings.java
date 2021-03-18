@@ -22,5 +22,6 @@ public class ReverseStrings {
         }
         catch (IOException e){
         }
+        System.out.println("String were reverted. See 'strings.txt'");
     }
 }
