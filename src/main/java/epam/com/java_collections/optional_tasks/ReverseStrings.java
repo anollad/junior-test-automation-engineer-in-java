@@ -1,4 +1,4 @@
-package epam.com.JavaCollections.OptionalTasks;
+package epam.com.java_collections.optional_tasks;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

@@ -1,6 +1,6 @@
-package epam.com.JavaClasses;
+package epam.com.java_classes;
 
-import static epam.com.JavaClasses.Diagnosis.*;
+import static epam.com.java_classes.Diagnosis.*;
 
     public class PatientsCards {
         static Patient patient = new Patient("Ivan","I.", "Ivanov", 1, PNEUMONIA);

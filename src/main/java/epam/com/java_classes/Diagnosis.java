@@ -1,4 +1,4 @@
-package epam.com.JavaClasses;
+package epam.com.java_classes;
 
 public enum Diagnosis {
     PNEUMONIA,

@@ -1,4 +1,4 @@
-package epam.com.JavaFundamentals.MainTasks;
+package epam.com.java_fundamentals.main_tasks;
 
 import java.io.BufferedReader;
 import java.io.IOException;

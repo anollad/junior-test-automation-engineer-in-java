@@ -1,4 +1,4 @@
-package epam.com.JavaCollections.MainTask.Salad.Vegetables;
+package epam.com.java_collections.main_task.salad.vegetables;
 
 import java.awt.*;
 
@@ -8,6 +8,14 @@ public class Vegetable {
     private int colorieContent;
     private int price;
     private Color color;
+
+    public Vegetable(int weight, String name, int colorieContent, int price, Color color) {
+        this.weight = weight;
+        this.name = name;
+        this.colorieContent = colorieContent;
+        this.price = price;
+        this.color = color;
+    }
 
     public int getColorieContent() {
         return colorieContent;
@@ -46,14 +54,6 @@ public class Vegetable {
     }
 
     public void setColor(Color color) {
-        this.color = color;
-    }
-
-    public Vegetable(int weight, String name, int colorieContent, int price, Color color) {
-        this.weight = weight;
-        this.name = name;
-        this.colorieContent = colorieContent;
-        this.price = price;
         this.color = color;
     }
 

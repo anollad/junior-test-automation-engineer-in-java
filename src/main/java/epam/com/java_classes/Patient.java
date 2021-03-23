@@ -1,4 +1,4 @@
-package epam.com.JavaClasses;
+package epam.com.java_classes;
 
 public class Patient {
     private int id;
@@ -81,14 +81,13 @@ public class Patient {
         this.medicalCardNumber = medicalCardNumber;
         this.diagnosis = diagnosis;
     }
+
     public Patient(int id, String name, String patronymic, String surname) {
         this.id = id;
         this.name = name;
         this.patronymic = patronymic;
         this.surname = surname;
     }
-
-
 
     @Override
     public String toString() {

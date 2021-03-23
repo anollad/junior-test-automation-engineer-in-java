@@ -1,5 +1,5 @@
-package epam.com.JavaCollections.MainTask.Salad;
-import epam.com.JavaCollections.MainTask.Salad.Vegetables.Vegetable;
+package epam.com.java_collections.main_task.salad;
+import epam.com.java_collections.main_task.salad.vegetables.Vegetable;
 
 import java.util.ArrayList;
 import java.util.Comparator;
