@@ -1,13 +1,13 @@
 package epam.com.java_collections.main_task.salad.vegetables;
 
-public class SweetPepper extends Vegetable {
+public class Pepper extends Vegetable {
 
-    public SweetPepper() {
+    public Pepper() {
         super();
     }
 
     @Override
     public String toString() {
-        return "SweetPepper," + super.toString();
+        return "Sweet Pepper," + super.toString();
     }
 }

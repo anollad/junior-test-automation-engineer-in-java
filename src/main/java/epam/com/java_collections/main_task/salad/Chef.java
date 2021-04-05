@@ -1,4 +1,5 @@
 package epam.com.java_collections.main_task.salad;
+
 import epam.com.java_collections.main_task.salad.vegetables.Vegetable;
 
 import java.util.ArrayList;

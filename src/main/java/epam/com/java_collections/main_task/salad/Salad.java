@@ -9,10 +9,10 @@ public class Salad {
 
     public static void main(String[] args) {
         ArrayList<Vegetable> vegetableInSalad = new ArrayList<>();
-        vegetableInSalad.add(new Tomato(100,"Tomato",24,50, Color.RED));
-        vegetableInSalad.add(new Cucumber(135,"Cucumber",16,25, Color.GREEN));
-        vegetableInSalad.add(new Carrot(130,"Carrot",35,30, Color.ORANGE));
-        vegetableInSalad.add(new SweetPepper(220,"SweetPepper",27,70, Color.YELLOW));
+        vegetableInSalad.add(new VegetableBuilder(new Tomato()).setName("Tomato Cherry").setColor(Color.RED).setPrice(35).setWeight(50).setColorieContent(24).build());
+        vegetableInSalad.add(new VegetableBuilder(new Cucumber()).setName("Cucumber Short").setColor(Color.GREEN).setPrice(28).setWeight(135).setColorieContent(16).build());
+        vegetableInSalad.add(new VegetableBuilder(new Carrot()).setName("Carrot Natan").setColor(Color.ORANGE).setPrice(16).setWeight(130).setColorieContent(35).build());
+        vegetableInSalad.add(new VegetableBuilder(new Pepper()).setName("Sweet Pepper").setColor(Color.YELLOW).setPrice(40).setWeight(220).setColorieContent(27).build());
 
         Chef chef = new Chef();
 
