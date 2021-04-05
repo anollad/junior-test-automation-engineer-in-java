@@ -1,15 +1,15 @@
 package aircompany.test;
 
-import aircompany.Airport;
-import aircompany.planes.PassengerPlane;
-import aircompany.planes.ExperimentalPlane;
-import aircompany.models.ClassificationLevel;
-import aircompany.models.ExperimentalTypes;
-import aircompany.models.MilitaryType;
+import epam.com.aircompany.Airport;
+import epam.com.aircompany.planes.PassengerPlane;
+import epam.com.aircompany.planes.ExperimentalPlane;
+import epam.com.aircompany.models.ClassificationLevel;
+import epam.com.aircompany.models.ExperimentalTypes;
+import epam.com.aircompany.models.MilitaryType;
 import org.junit.Test;
 import org.junit.Assert;
-import aircompany.planes.MilitaryPlane;
-import aircompany.planes.Plane;
+import epam.com.aircompany.planes.MilitaryPlane;
+import epam.com.aircompany.planes.Plane;
 
 import java.util.Arrays;
 import java.util.List;
