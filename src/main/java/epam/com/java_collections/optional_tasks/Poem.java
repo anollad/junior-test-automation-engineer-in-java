@@ -10,8 +10,8 @@ import java.util.List;
 
 public class Poem {
     public static void main(String[] args) throws IOException {
-        String dirName = "src/main/java/epam/com/JavaCollections/OptionalTasks";
-        String fileName = "poem.txt";
+        String dirName = "target/classes/text";
+        String fileName = "POEM.txt";
         Path path = FileSystems.getDefault().getPath(dirName, fileName);
         List<String> strings = Files.readAllLines(path, StandardCharsets.UTF_8);
         strings.sort(Comparator.comparingInt(String::length));

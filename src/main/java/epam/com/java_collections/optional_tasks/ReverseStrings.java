@@ -9,19 +9,19 @@ import java.util.List;
 
 public class ReverseStrings {
     public static void main(String[] args) throws IOException {
-            String dirName = "src/main/java/epam/com/JavaCollections/OptionalTasks";
-            String fileName = "strings.txt";
+            String dirName = "target/classes/text";
+            String fileName = "STRINGS.txt";
             Path path = FileSystems.getDefault().getPath(dirName, fileName);
-                List<String> strings = Files.readAllLines(path, StandardCharsets.UTF_8);
+            List<String> strings = Files.readAllLines(path, StandardCharsets.UTF_8);
 
-        try(FileWriter fw = new FileWriter("src/main/java/epam/com/JavaCollections/OptionalTasks/strings.txt", false)){
-            for (int i = strings.size()-1; i >= 0; i--) {
-                fw.write(strings.get(i)+ "\n");
-                fw.flush();
-            }
+            try(FileWriter fw = new FileWriter("target/classes/text/STRINGS.txt", false)){
+                for (int i = strings.size()-1; i >= 0; i--) {
+                    fw.write(strings.get(i)+ "\n");
+                    fw.flush();
+                }
         }
         catch (IOException e){
         }
-        System.out.println("String were reverted. See 'strings.txt'");
+        System.out.println("String were reverted. See 'STRINGS.txt'");
     }
 }
