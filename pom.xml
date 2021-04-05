@@ -38,6 +38,28 @@
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
+		  <executions>
+        <execution>
+            <id>copy-resources</id>
+            <phase>validate</phase>
+            <goals>
+                <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+                <outputDirectory>
+                       ${basedir}/target/resources
+                </outputDirectory>
+                <resources>
+                    <resource>
+                        <directory>src/main/resources/text</directory>
+                        <includes>
+                            <include>**/*.txt</include>
+                        </includes>
+                    </resource>
+                </resources>
+            </configuration>
+        </execution>
+    </executions>
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
