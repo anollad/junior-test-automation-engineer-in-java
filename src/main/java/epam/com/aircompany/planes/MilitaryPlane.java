@@ -1,6 +1,6 @@
-package aircompany.planes;
+package epam.com.aircompany.planes;
 
-import aircompany.models.MilitaryType;
+import epam.com.aircompany.models.MilitaryType;
 
 import java.util.Objects;
 

@@ -1,10 +1,10 @@
-package aircompany;
+package epam.com.aircompany;
 
-import aircompany.planes.ExperimentalPlane;
-import aircompany.models.MilitaryType;
-import aircompany.planes.MilitaryPlane;
-import aircompany.planes.PassengerPlane;
-import aircompany.planes.Plane;
+import epam.com.aircompany.models.MilitaryType;
+import epam.com.aircompany.planes.ExperimentalPlane;
+import epam.com.aircompany.planes.MilitaryPlane;
+import epam.com.aircompany.planes.PassengerPlane;
+import epam.com.aircompany.planes.Plane;
 
 import java.util.*;
 

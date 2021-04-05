@@ -1,4 +1,4 @@
-package aircompany.planes;
+package epam.com.aircompany.planes;
 
 import java.util.Objects;
 

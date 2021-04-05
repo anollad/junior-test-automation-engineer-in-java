@@ -1,7 +1,7 @@
-package aircompany.planes;
+package epam.com.aircompany.planes;
 
-import aircompany.models.ClassificationLevel;
-import aircompany.models.ExperimentalTypes;
+import epam.com.aircompany.models.ClassificationLevel;
+import epam.com.aircompany.models.ExperimentalTypes;
 
 public class ExperimentalPlane extends Plane {
 
