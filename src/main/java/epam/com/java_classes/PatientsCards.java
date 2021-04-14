@@ -1,23 +1,20 @@
 package epam.com.java_classes;
 
-import static epam.com.java_classes.Diagnosis.*;
+public class PatientsCards {
 
-    public class PatientsCards {
+    public static void main(String[] args) {
 
-        public static void main(String[] args){
+        Patient[] patients = new Patient[]{
+                new Patient("Ivan", "I.", "Ivanov", 1, Diagnosis.PNEUMONIA),
+                new Patient("Petr", "P.", "Petrov", 2, Diagnosis.PNEUMONIA),
+                new Patient("Olga", "S.", "Sidorova", 3, Diagnosis.FLU),
+                new Patient("Maria", "D.", "Dmitrieva", 4, Diagnosis.HEART_ATTACK),
+                new Patient("Fedor", "F", "Fedorov", 5, Diagnosis.DIABETES),
+                new Patient("Anna", "P.", "Pavlova", 6, Diagnosis.DIABETES),
+                new Patient("Yulia", "D.", "Zaiceva", 7, Diagnosis.GASTRITIS)};
 
-            Patient patient = new Patient("Ivan","I.", "Ivanov", 1, PNEUMONIA);
-            Patient patient2 = new Patient("Petr", "P.","Petrov", 2, PNEUMONIA);
-            Patient patient3 = new Patient("Olga", "S.","Sidorova", 3, FLU);
-            Patient patient4 = new Patient("Maria", "D.","Dmitrieva", 4, HEART_ATTACK);
-            Patient patient5 = new Patient("Fedor", "F","Fedorov", 5, DIABETES);
-            Patient patient6 = new Patient("Anna", "P.","Pavlova", 6, DIABETES);
-            Patient patient7 = new Patient("Yulia","D.", "Zaiceva", 7, GASTRITIS);
+        PatientsResearch.getPatientsDiagnosis(Diagnosis.FLU, patients);
+        PatientsResearch.getPatientsMedicalCardNumber(1, 5, patients);
 
-            Patient [] patients = new Patient[]{patient, patient2, patient3, patient4, patient5, patient6, patient7};
-
-            PatientsResearch.getPatientsDiagnosis(FLU, patients);
-            PatientsResearch.getPatientsMedicalCardNumber(1, 5, patients);
-
-        }
+    }
 }
