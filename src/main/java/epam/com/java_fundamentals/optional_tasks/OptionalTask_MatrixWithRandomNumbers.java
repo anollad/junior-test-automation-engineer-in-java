@@ -23,12 +23,12 @@ public class OptionalTask2 {
         int m = 100;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
-                array[i][j] = random.nextInt(m) + random.nextInt(m)*-1;
+                array[i][j] = random.nextInt(m) + random.nextInt(m) * -1;
             }
         }
     }
 
-    private static void outputMatrix(int[][] array){
+    private static void outputMatrix(int[][] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
                 System.out.print(" " + array[i][j] + " ");

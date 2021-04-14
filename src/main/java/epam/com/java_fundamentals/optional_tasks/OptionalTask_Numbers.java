@@ -6,11 +6,12 @@ import java.io.InputStreamReader;
 
 public class OptionalTask1 {
     public static void main(String[] args) throws IOException {
-        int n = Integer.parseInt(args[0]);
-        String [] num = new String[n];
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter count of numbers: ");
+        int n = Integer.parseInt(reader.readLine());
+        String[] num = new String[n];
         System.out.println("Enter numbers:");
-        for (int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             num[i] = reader.readLine();
         }
         int min = num[0].length();
@@ -27,7 +28,7 @@ public class OptionalTask1 {
             }
         }
 
-        for (int i = 0; i < num.length-1; i++) {
+        for (int i = 0; i < num.length - 1; i++) {
             int a = (num[i].length() + num[i + 1].length()) / num.length;
             if (num[i].length() < a) {
                 System.out.println("Length less than middle length: " + num[i] + " with length: " + num[i].length());
