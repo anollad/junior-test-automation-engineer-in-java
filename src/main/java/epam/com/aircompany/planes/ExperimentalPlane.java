@@ -22,11 +22,11 @@ public class ExperimentalPlane extends Plane {
         this.experimentalTypes = experimentalTypes;
     }
 
-    public ClassificationLevel getClassificationLevel(){
+    public ClassificationLevel getClassificationLevel() {
         return classificationLevel;
     }
 
-    public void setClassificationLevel(ClassificationLevel classificationLevel){
+    public void setClassificationLevel(ClassificationLevel classificationLevel) {
         this.classificationLevel = classificationLevel;
     }
 
@@ -44,7 +44,7 @@ public class ExperimentalPlane extends Plane {
     public String toString() {
         return "experimentalPlane{" +
                 "model='" + model + '\'' +
-                '}';
+                 '}';
     }
 }
 

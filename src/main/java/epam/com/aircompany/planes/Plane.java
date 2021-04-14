@@ -27,13 +27,13 @@ abstract public class Plane {
         return maxFlightDistance;
     }
 
-    public int getMinLoadCapacity() {
+    public int getMaxLoadCapacity() {
         return this.maxLoadCapacity;
     }
 
     @Override
     public String toString() {
-        return "Plane{" +
+        return '\n' + "Plane{" +
                 "model='" + model + '\'' +
                 ", maxSpeed=" + maxSpeed +
                 ", maxFlightDistance=" + maxFlightDistance +
