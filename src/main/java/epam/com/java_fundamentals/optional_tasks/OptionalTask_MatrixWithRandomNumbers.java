@@ -7,10 +7,11 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.Stream;
 
-public class OptionalTask2 {
+public class OptionalTask_MatrixWithRandomNumbers {
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter number of matrix dimension: ");
         int n = Integer.parseInt(reader.readLine());
         int[][] a = new int[n][n];
         fillMatrixWithRandomNumbers(a);
@@ -20,18 +21,18 @@ public class OptionalTask2 {
 
     private static void fillMatrixWithRandomNumbers(int[][] array) {
         Random random = new Random();
-        int m = 100;
+        int borderlineValue = 100;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
-                array[i][j] = random.nextInt(m) + random.nextInt(m) * -1;
+                array[i][j] = random.nextInt(borderlineValue) + random.nextInt(borderlineValue) * -1;
             }
         }
     }
 
     private static void outputMatrix(int[][] array) {
-        for (int i = 0; i < array.length; i++) {
+        for (int[] ints : array) {
             for (int j = 0; j < array.length; j++) {
-                System.out.print(" " + array[i][j] + " ");
+                System.out.print(" " + ints[j] + " ");
             }
             System.out.println();
         }
@@ -40,9 +41,7 @@ public class OptionalTask2 {
     private static void streamlineMatrix(int[][] array) {
         int[] array1 = Stream.of(array).flatMapToInt(Arrays::stream).sorted().toArray();
         for (int row = 0; row < array.length; row++) {
-            for (int col = 0; col < array.length; col++) {
-                array[row][col] = array1[row * array.length + col];
-            }
+            System.arraycopy(array1, row * array.length, array[row], 0, array.length);
         }
     }
 }
