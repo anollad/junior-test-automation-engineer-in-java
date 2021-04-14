@@ -11,7 +11,7 @@ public class ReversedOrder {
         String arg = reader.readLine();
         System.out.println("Reverted text: ");
 
-        for (int i = arg.toCharArray().length-1; i >= 0; i--) {
+        for (int i = arg.toCharArray().length - 1; i >= 0; i--) {
             System.out.print(arg.toCharArray()[i]);
         }
     }

@@ -11,8 +11,8 @@ public class UserName {
 
         System.out.println("Enter your name: ");
 
-        String username = reader.readLine();
+        String userName = reader.readLine();
 
-        System.out.println("Hello, " + username);
+        System.out.println("Hello, " + userName);
     }
 }

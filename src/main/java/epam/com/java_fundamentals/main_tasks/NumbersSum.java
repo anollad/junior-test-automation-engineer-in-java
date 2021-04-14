@@ -12,7 +12,7 @@ public class NumbersSum {
         int[] num = new int[arg.length];
 
         for (int i = 0; i < arg.length; i++) {
-             num[i] = Integer.parseInt(arg[i]);
+            num[i] = Integer.parseInt(arg[i]);
         }
 
         int sum = 0;

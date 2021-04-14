@@ -18,7 +18,7 @@ public class VegetableBuilder<T extends Vegetable> {
     }
 
     public VegetableBuilder setWeight(int weight) {
-       vegetable.setWeight(weight);
+        vegetable.setWeight(weight);
         return this;
     }
 

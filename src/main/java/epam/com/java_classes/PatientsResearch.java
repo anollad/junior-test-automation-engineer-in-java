@@ -5,7 +5,7 @@ public class PatientsResearch {
     public static void getPatientsDiagnosis(Diagnosis someDiagnosis, Patient[] patients) {
         System.out.println("Patients with " + someDiagnosis + " are: ");
         for (int i = 0; i < patients.length; i++) {
-            if (patients[i].getDiagnosis().equals(someDiagnosis)){
+            if (patients[i].getDiagnosis().equals(someDiagnosis)) {
                 System.out.println(patients[i]);
             }
         }
