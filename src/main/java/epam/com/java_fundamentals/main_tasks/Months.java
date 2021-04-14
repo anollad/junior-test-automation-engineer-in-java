@@ -10,9 +10,9 @@ public class Months {
 
         System.out.println("Please, enter number from 1 to 12: ");
 
-        int a = Integer.parseInt(reader.readLine());
+        int numberOfMonth = Integer.parseInt(reader.readLine());
 
-        switch (a){
+        switch (numberOfMonth) {
             case 1:
                 System.out.println("January");
                 break;
